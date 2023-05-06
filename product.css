@@ -1,0 +1,160 @@
+:root{
+    --main-green: rgba(37, 99, 66, 0.8);
+    --hover: rgba(2, 43, 22, 0.959);
+    --comment: hsl(240, 13%, 19%);
+    --header: hsl(240, 100%, 5%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', 'Fraunces', sans-serif, 'Roboto';
+    background-color: rgb(236, 230, 195);
+    min-height: 100vh;
+    width: 100%;
+    line-height: 1.4;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 2rem;
+    width:  50%;
+    height: 500px;
+    margin: 8.5rem auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    background-color: hsl(0 0 80%);
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.left{
+    display: flex;
+    flex-direction: row ;
+    justify-content: center
+}
+
+.left img{
+    height: 500px;
+    object-fit: cover;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content:stretch;
+}
+
+.title{
+    font-family:  'Montserrat' ;
+    font-weight: 350;
+    color: var(--comment);
+    letter-spacing: 10px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.header{
+    font-family: 'Fraunces' ;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    display: flex;
+    color: var( --header);
+    line-height: 1.2;
+}
+
+.info{
+    font-weight: 200;
+    color: var(--comment);
+    margin-bottom: 1.5rem;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.price h1{
+    font-family: 'Fraunces' ;
+    font-weight: 700;
+    color: rgba(49, 110, 78, 0.8);
+}
+
+.price h4{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    text-decoration: line-through;
+    color: var(--comment)
+}
+
+.btn{
+    font-family: sans-serif;
+    margin-top: 1.5rem;
+    background-color: var(--main-green);
+    color: hsl(0 0% 100%);
+    width: 260px;
+    height: 50px;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+
+.btn:hover{
+    background-color: var(--hover);
+}
+
+@media only screen and (max-width: 700px) {
+    .container{
+        height: 820px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 0;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .title{
+        margin-top: -3px;
+    }
+
+    .right{
+        margin: -0.5rem 28px;
+    }
+
+    .left img{
+        height: 300px;
+        width: 400px;
+        object-fit: cover;
+        border-radius: 0;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+    
+    .btn{
+        width: auto;
+    }
+}
