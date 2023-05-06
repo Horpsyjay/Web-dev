@@ -147,8 +147,8 @@ body{
 
     .left img{
         margin: 24px 12px;
-        height: 300px;
-        width: 400px;
+        height: 280px;
+        width: 350px;
         object-fit: cover;
         border-radius: 0;
         border-top-right-radius: 8px;
@@ -156,9 +156,10 @@ body{
     }
     
     .btn{
-        width: auto;
+        width: 340px;
+        
     }
     .info{
-        margin-top: -4px
+        margin-top: -8px
     }
 }
